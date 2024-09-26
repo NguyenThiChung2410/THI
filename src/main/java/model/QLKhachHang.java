@@ -43,7 +43,7 @@ public class QLKhachHang {
             kh.setHoten(arr[1]);
 
             kh.setChisocu(Double.parseDouble(arr[3]));
-            kh.setChisocu(Double.parseDouble(arr[4]));
+            kh.setChisomoi(Double.parseDouble(arr[4]));
             
             dsKhachHang.add(kh);
         }
@@ -56,7 +56,7 @@ public class QLKhachHang {
                 String hoten=kh.getHoten();
                 double sokwm=kh.getTieuThu();
                 double tientra=kh.getTienTra();
-                bw.write(kh.getMaso() + ";" + kh.getHoten() + ";" + kh.getTieuThu() + ";" + kh.getTienTra());
+                bw.write(kh.getMaso() + ";" + kh.getHoten()+";" + ";" + kh.getTieuThu() + ";" + kh.getTienTra());
                 bw.newLine();
             }
             System.out.println("Xuất hoá đơn thành công");
